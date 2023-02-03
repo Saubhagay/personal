@@ -469,7 +469,7 @@ The greatest glory in living lies not in never falling, but in rising every time
       </div>
     </section><!-- End Blog Section -->
 
-    <!-- ======= Contact Section ======= -->
+   <!-- ======= Contact Section ======= -->
     <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
       <div class="overlay-mf"></div>
       <div class="container">
@@ -484,7 +484,8 @@ The greatest glory in living lies not in never falling, but in rising every time
                         Send Message Us
                       </h5>
                     </div>
-<form onsubmit="sendEmail() reset(); return false;">
+                    <div>
+                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                         <div class="row">
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
@@ -518,28 +519,6 @@ The greatest glory in living lies not in never falling, but in rising every time
                       </form>
                     </div>
                   </div>
-                <script src="https://smtpjs.com/v3/smtp.js">
-</script>
-                <script>
-                  function sendEmail(){
-                Email.send({
-          secureToken: "3fc658d4-ce59-4fd4-b81a-00bc2b148758",
-    Host : "smtp.elasticemail.com",
-    Username : "saubhagay.goyal2004@gmail.com",
-    Password : "8C43BE77A4775D66D5623DDCF4A55298DD46",
-    To : 'saubhagay.goyal2004@gmail.com',
-    From : "document.getElementById("email").value",
-    Subject : "This is the subject",
-    Body : Body: "Name: " + document.getElementById("name").value
-+ "<br> Email: " + document.getElementById("email").value
-+ "<br> Subject: + document.getElementById("subject").value
-11
-+ "<br> Message: + document.getElementById("Message").value
-}).then(
-  message => alert(Message sent succesfully)
-);
-  }
-                </script>
                     
                   <div class="col-md-6">
                     <div class="title-box-2 pt-4 pt-md-0">
