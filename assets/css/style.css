@@ -1487,14 +1487,7 @@ padding: 0;
 box-sizing: border-box;
 font-family: 'poppins', sans-serif;
 }
-.container {
-width: 10%;
-height: 10vh;
-background: #001660;
-display: flex;
-align-items: center;
-justify-content: center;
-}
+
 form{
 background: |#fff;
 display: flex;
