@@ -485,7 +485,7 @@ The greatest glory in living lies not in never falling, but in rising every time
                       </h5>
                     </div>
                     <div>
-                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                      <form onsubmit="sendEmail()" method="post" role="form" class="php-email-form">
                         <div class="row">
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
@@ -550,6 +550,21 @@ The greatest glory in living lies not in never falling, but in rising every time
           </div>
         </div>
       </div>
+      <script src=" https://smtpjs.com/v3/smtp.js"></script>
+      <script>
+        function sendEmail()
+        {
+        Host : "smtp.elasticemail.com",
+    Username : "username",
+    Password : "password",
+    To : 'them@website.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+        }
+        </script>
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
