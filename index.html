@@ -484,41 +484,17 @@ The greatest glory in living lies not in never falling, but in rising every time
                         Send Message Us
                       </h5>
                     </div>
-                    <div>
-                      <form onsubmit="sendEmail() reset(); return false;" method="post" role="form" class="php-email-form">
-                        <div class="row">
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                            </div>
-                          </div>
-                          <div class="col-md-12 text-center my-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-                          </div>
-                          <div class="col-md-12 text-center">
-                            <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
+                    <link rel="stylesheet" href="style.css">
+<div class="container">
+<form>
+<h3>GET IN TOUCH</h3>
+<input type="text" id="name" placeholder="Your Name" required>
+<input type="email" id="email" placeholder="Email id" required>
+<input type="text" id="phone" placeholder="Phone no." required>
+<textarea id="message"_rows="4" placeholder="How can we help you?"></textarea>
+<button type="submit">Send</button>
+</form>
+</div>
                   <div class="col-md-6">
                     <div class="title-box-2 pt-4 pt-md-0">
                       <h5 class="title-left">
@@ -550,21 +526,7 @@ The greatest glory in living lies not in never falling, but in rising every time
           </div>
         </div>
       </div>
-      <script src=" https://smtpjs.com/v3/smtp.js"></script>
-      <script>
-        function sendEmail()
-        {
-        Host : "smtp.elasticemail.com",
-    Username : "username",
-    Password : "password",
-    To : 'them@website.com',
-    From : "you@isp.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
-}).then(
-  message => alert(message)
-        }
-        </script>
+       
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
