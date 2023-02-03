@@ -523,15 +523,19 @@ The greatest glory in living lies not in never falling, but in rising every time
                 <script>
                   function sendEmail(){
                 Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "username",
+    Host : "smtp.gmail.com",
+    Username : "saubhagay.goyal2004@gmail.com",
     Password : "password",
-    To : 'them@website.com',
-    From : "you@isp.com",
+    To : 'saubhagay.goyal2004@gmail.com',
+    From : "document.getElementById("email").value",
     Subject : "This is the subject",
-    Body : "And this is the body"
+    Body : Body: "Name: " + document.getElementById("name").value
++ "<br> Email: " + document.getElementById("email").value
++ "<br> Pnone no: + document.getElementById("phone").value
+11
++ "<br> Message: + document.getElementById("message").value
 }).then(
-  message => alert(message)
+  message => alert(Message sent succesfully)
 );
   }
                 </script>
